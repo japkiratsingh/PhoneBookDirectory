@@ -22,7 +22,6 @@ void insert(string key)
     struct trie *temp = root;
     for (int i = 0; i < key.length(); i++)
     {
-        // Ascii value of the individual letters are subtracted from 'a' so as to find the index value for trie
         int id = key[i] - 'a';
         // If the node is empty at that index meaning no word with that certain letter has been entered
         if (temp->ch[id] == NULL)
